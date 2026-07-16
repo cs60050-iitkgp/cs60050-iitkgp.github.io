@@ -1,386 +1,219 @@
-<html>
-    <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>CS60050 MACHINE LEARNING - Autumn 2026</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800">
-        <style>
-            table, th, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            }
-            .table>thead>tr>th {
-                vertical-align: bottom;
-                border-bottom: 2px solid black !important;
-            }
-            .content {
-                padding: 5% !important;
-                background-color: aliceblue;
-                font-family: 'system-ui';
-            }
-            .refernce {
-                font-family: "Fira Sans", sans-serif;
-            }
-            .head {
-                font-family: fantasy;
-                color: white;
-                padding: 2%;
-                padding-left: 5%;
-                background-image: linear-gradient(to right top, #8e2de2, #2c003e);
-            }
-            .team {
-                font-family: "Fira Sans", sans-serif;
-            }
-            .overview {
-                font-family: "Fira Sans", sans-serif;
-            }
-            .instructor {
-                margin-top: 5%;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CS60050 Machine Learning | Autumn 2026</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:Inter,sans-serif;background:#f7f9fc;color:#222}
+.navbar{background:#fff;border-bottom:1px solid #ddd}
+.hero{background:#0b3d91;color:#fff;padding:55px 0}
+.hero h1{font-weight:700}
+.section{padding:60px 0}
+.card{border:none;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.table>:not(caption)>*>*{padding:0.9rem}
+footer{background:#fff;border-top:1px solid #ddd;padding:25px 0;margin-top:50px}
+.badge-ann{background:#eef4ff;color:#0b3d91}
+</style>
+</head>
+<body>
 
-            .points p {
-                background-color: #eee;
-                font-family:Arial, Helvetica, sans-serif;
-                width: 100%;
-                margin: 10px auto;
-                padding: 15px;
-                position: relative;
-            }
+<nav class="navbar navbar-expand-lg sticky-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">CS60050 ML</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+<li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+<li class="nav-item"><a class="nav-link" href="#lectures">Lectures</a></li>
+<li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
+<header class="hero">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-9">
+<h1>CS60050 – Machine Learning</h1>
+<p class="lead mb-1">Autumn Semester 2026</p>
+<p class="mb-0">Department of Computer Science & Engineering<br>Indian Institute of Technology Kharagpur</p>
+</div>
+<div class="col-md-3 text-md-end mt-3 mt-md-0">
+<img src="https://www.iitkgpfoundation.org/images/template/header_logo.png" width="95">
+</div>
+</div>
+</div>
+</header>
 
-            .points p::before {
-                background-color: #EBD671;
-                border-left: 1px solid #EBD671;
-                border-radius: 5px;
-                padding: 15px;
-                color: white;
-                position: absolute;
-                left: -30px;
-                top: 0px;
-            }
-        </style>
-     </head>
-    
-    
-    <div class=" head row">
-        <div class="col-lg-1 col-md-1 col-sm-3">
-            <img src="https://www.iitkgpfoundation.org/images/template/header_logo.png" width="100px" alt="IIT KGP">
+<section id="overview" class="section">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-8">
+<div class="card p-4">
+<h3>Course Overview</h3>
+<p>This course introduces the fundamental concepts and algorithms of Machine Learning.</p>
+<!--
+<h5>Learning Outcomes</h5>
+<ul>
+<li>Understand core ML algorithms.</li>
+<li>Develop practical ML models.</li>
+<li>Analyze model performance.</li>
+<li>Apply ML techniques to real-world problems.</li>
+</ul>
+-->
+</div>
+</div>
+<div class="col-lg-4">
+<div class="card p-4 mb-4">
+<h4>Course Information</h4>
+<table class="table">
+<tr><td><b>Venue</b></td><td>TBD</td></tr>
+<tr><td><b>Lecture</b></td><td>TBD</td></tr>
+<tr><td><b>Test</b></td><td>TBD</td></tr>
+</table>
+</div>
+<div class="card p-4">
+<h4>Announcements</h4>
+<p><span class="badge badge-ann">New</span> Course website launched.</p>
+<p><span class="badge badge-ann">TBD</span> Lecture schedule and details will be updated.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="schedule" class="section bg-white">
+<div class="container">
+<h2 class="mb-4">Lectures</h2>
+<div class="table-responsive">
+<table class="table table-hover align-middle">
+<thead class="table-light">
+<tr><th>Topic</th><th>Section 1</th><th>Section 2</th></tr>
+</thead>
+<tbody>
+<!--
+<tr><td>1</td><td>Introduction to Machine Learning</td><td>TBD</td><td>TBD</td></tr>
+<tr><td>2</td><td>Probability Refresher</td><td>TBD</td><td>TBD</td></tr>
+<tr><td>3</td><td>Linear Regression</td><td>TBD</td><td>TBD</td></tr>
+<tr><td>4</td><td>Logistic Regression</td><td>TBD</td><td>TBD</td></tr>
+<tr><td>5+</td><td>To be updated</td><td>-</td><td>-</td></tr>
+-->
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!--
+<section id="lectures" class="section">
+<div class="container">
+<div class="card p-4">
+<h3>Assignments & Evaluation</h3>
+<ul>
+<li>Assignments: TBD</li>
+<li>Programming Exercises: TBD</li>
+<li>Mid Semester: TBD</li>
+<li>End Semester: TBD</li>
+</ul>
+</div>
+</div>
+</section>
+-->
+<section id="resources" class="section bg-white">
+<div class="container">
+<div class="card p-4">
+<h3>Resources</h3>
+<ul>
+<!--
+<li>Christopher Bishop – Pattern Recognition and Machine Learning</li>
+<li>Kevin Murphy – Machine Learning: A Probabilistic Perspective</li>
+<li>Hastie, Tibshirani & Friedman – Elements of Statistical Learning</li>
+<li>Lecture slides and supplementary material will be uploaded throughout the semester.</li>
+-->
+</ul>
+</div>
+</div>
+</section>
+
+<section id="team" class="section">
+<div class="container">
+<h2 class="mb-4">Course Team</h2>
+<div class="row g-4">
+<!--
+<div class="col-md-6">
+<div class="card p-4">
+<h4>Instructors</h4>
+<p><b>Prof. Abir Das</b><br><a href="https://cse.iitkgp.ac.in/~adas/">Homepage</a></p>
+<hr>
+<p><b>Prof. Ayan Chaudhury</b><br><a href="http://cse.iitkgp.ac.in/~ayanc/">Homepage</a></p>
+</div>
+</div>
+-->
+
+<div class="col-md-6">
+    <div class="card p-4">
+        <h4 class="mb-4">Instructors</h4>
+
+        <div class="row align-items-center mb-3">
+            <div class="col-3">
+                <img src="https://cse.iitkgp.ac.in/~adas/images/Fac_Profile_Pic.jpg"
+                     class="rounded-circle"
+				     style="width:90px; height:90px; object-fit:cover;"
+				     alt="Prof. Abir Das">
+            </div>
+            <div class="col-9">
+                <h5 class="mb-1">Prof. Abir Das</h5>
+                <a href="https://cse.iitkgp.ac.in/~adas/" target="_blank">
+                    Homepage
+                </a>
+            </div>
         </div>
-        <div class="col-8" style="margin-top: 1%">
-            <h1>CS60050 MACHINE LEARNING </h1>
+
+        <hr>
+
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="http://cse.iitkgp.ac.in/~ayanc/ayan_photo.jpeg"
+                     class="rounded-circle"
+				     style="width:90px; height:90px; object-fit:cover;"
+				     alt="Prof. Ayan Chaudhury">
+            </div>
+            <div class="col-9">
+                <h5 class="mb-1">Prof. Ayan Chaudhury</h5>
+                <a href="http://cse.iitkgp.ac.in/~ayanc/" target="_blank">
+                    Homepage
+                </a>
+            </div>
         </div>
-        <div class="col-3" style="margin-top: 2%">
-            <h4 style="text-align: right"> Autumn 2026</h4>
-        </div>
+
     </div>
-    
-    
-    <div class="content row">
-        <div class="col-lg-9 col-sm-12 col-md-8" >
-            <div class="card overview shadow-lg p-3 mb-5 bg-white rounded" style="border-radius: 25px !important;">
-                <div class="card-body">
-                  <h5 class="card-title"><font size="5"><b>Course Overview</b></font><br></h5>
-                  <!--
-                  <div class="row">
-                    <div class="col-lg-6 points">
-                        <p class="card-text">Asymptotic notations and their significance, introduction to RAM model of computation, complexity analysis of algorithms, worst case and average case.</p>
-                        <p>Basic introduction to algorithmic paradigms like divide and conquer, recursion, greedy, etc.</p>
-                        <p>Searching: binary search trees, balanced binary search trees, AVL trees and red-black trees, B-trees, skip lists, hashing.</p>
-                        <p> Priority queues, heaps, Interval trees, tries.</p>
-                        <p> Order statistics.</p>
-                    </div>
-                    <div class="col-lg-6 points">
-                        <p>Sorting: comparison based sorting - quick sort, heap sort, merge sort: worst and average case analysis.</p>
-                        <p> Decision tree model and (worst case) lower bound on sorting.</p>
-                        <p> Sorting in linear time - radix sort, bucket sort, counting sort, etc.</p>
-                        <p> String matching. </p>
-                        <p>Graph Algorithms: BFS, DFS, connected components, topological sort, minimum spanning trees, shortest paths - single source and all pairs.</p>
-                    </div>
-                  </div>
-                  -->
-                </div>
-            </div>
-            <div class=" row" >
-                <div class="col-lg-6 col-sm-12 col-md-6" >
-                        <font size="5"><b>CS60050 ML</b></font><br><br>
-                        <li>TBD</li>
-                        <li>TBD</li> 
-                        <hr>
-                        <font size="4"><b>Venue</b></font>
-                        <li>TBD</li>
-                        <li>TBD</li>
-                        <hr>
-                        <font size="4"><b>Tests</b></font>
-                        <li>TBD</li>
-                        <br><br>
-                </div>
-                <!--
-                <div class="col-lg-6 col-sm-12 col-md-6" >
-                    <font size="5"><b>CS21209 [Lab]</b></font><br><br>
-                    <li>Thursday (02:00–05:00 pm)</li><hr>
-                    <font size="4"><b>Venue</b></font>
-                    <li>Software Lab and PC Lab-II</li><hr>
-                    <li>NC341 (Roll no.s ending with even digits)</li>
-                </div>
-                
-                <div class="col-lg-6 col-sm-12 col-md-6" >
-                    <font size="4"><b>Sample questions</b></font>
-                    <li><a href="https://github.com/cs21203-iitkgp/cs21203-iitkgp.github.io/raw/main/au2023/ClassTestSolutions_2022/class_test_1_aut_2022.pdf" target="_blank">class_test_1_aut_2022.pdf</a></li>
-                    <li><a href="https://github.com/cs21203-iitkgp/cs21203-iitkgp.github.io/raw/main/au2023/ClassTestSolutions_2022/class_test_1_solutions_aut_2022.pdf" target="_blank">class_test_1_solutions_aut_2022.pdf</a></li><hr>
-                    <li>NC341 (Roll no.s ending with even digits)</li>  
-                </div>
-                -->
-            </div>
+</div>
 
 
-            
-            
-            
-            
-            
-            
-                
-            
-            
-            <br>
-            
-            <div class="card card overview shadow-lg p-3 mb-5 bg-white rounded"  style="width: 100% !important; background:#f6f6f6 !important">
 
-                <font size="5"><b>Lectures</b></font><hr>
-                <font size="4"> 
-        
-                    <table class="table table-responsive-sm">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th col="6">Topic</th>
-                            <th col="3">Section 1</th>
-                            <th col="3">Section 2</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <!--    
-                        <tr>
-                            <td col="6">Introduction</td>
-                            <td col="3"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/01_Introduction.pptx" target="_blank">Introduction.pptx</a></td>
-                            <td rowspan="2" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/1_intro_probabilityBasics.pdf" target="_blank">1_intro_probabilityBasics.pdf</a></td>
+<div class="col-md-6">
+<div class="card p-4">
+<h4>Teaching Assistants</h4>
+<p>To be added.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-                        </tr>
-                        <tr>
-                            <td col="6">Probability Primer</td>
-                            <td col="3"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/01_Probability_Primer.pdf" 
-                        </tr>
+<footer>
+<div class="container text-center">
+<p class="mb-1"><strong>Department of Computer Science & Engineering</strong></p>
+<p class="mb-1">Indian Institute of Technology Kharagpur</p>
+<small>Last Updated: July 2026</small>
+</div>
+</footer>
 
-                        <tr>
-                            <td col="3">MLE MAP</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/02_MLE_MAP.pdf" target="_blank">MLE_MAP.pdf</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/2_MLE_MAP.pdf" target="_blank">2_MLE_MAP.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">Linear Logistic Regression</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/03_Lin_Logistic_Regression.pdf" target="_blank">Lin_Logistic_Regression.pptx</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/3_1_LinearRegression.pdf" target="_blank">3_1_LinearRegression.pdf</a><br>
-                            <a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/3_2_Regularization.pdf" target="_blank">3_2_Regularization.pdf</a><br>
-                            <a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/3_3_LogisticRegression.pdf" target="_blank">3_3_LogisticRegression.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">Naive Bayes</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/04_NaiveBayes.pdf" target="_blank">NaiveBayes.pdf</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/4_NaiveBayes.pdf" target="_blank">4_NaiveBayes.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">KNN, Bias, Variance, Cross-validation</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/05_Bias_Variance.pdf" target="_blank">Bias_Variance.pdf</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/5_Knn_Bias_Variance_CrossValidation.pdf" target="_blank">5_Knn_Bias_Variance_CrossValidation.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">Perceptron and Neural Networks</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/06_Perceptron_and_NN.pptx" target="_blank">Perceptron_and_NN.pptx</a></td>
-                            <td col="3"style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/6_Perceptron.pdf" target="_blank">6_Perceptron.pdf</a><br>
-                                                                                           <a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/7_NeuralNetwork.pdf" target="_blank">7_NeuralNetwork.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">Decision Trees</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/07_Decision_Trees.pdf" target="_blank">Decision_Trees.pdf</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/8_DecisionTree.pdf" target="_blank">8_DecisionTree.pdf</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <td col="3">SVM</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/08_SVM.pdf" target="_blank">SVM.pdf</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/9_SVM.pdf" target="_blank">9_SVM.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">PCA & LDA</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/09_PCA_LDA.pdf" target="_blank">PCA_LDA.pdf</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/10_PCA.pdf" target="_blank">10_PCA.pdf</a><br>
-                                                                                            <a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/11_LDA.pdf" target="_blank">11_LDA.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">Clustering</td>
-                            <td col="6"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/10_K-Means.pdf" target="_blank">Clustering.pdf</a></td>
-                            <td col="3" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec2/12_Clustering.pdf" target="_blank">12_Clustering.pdf</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3">AI: Brief Introduction</td>
-                            <td colspan="2" style="vertical-align: middle; text-align: center;"><a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/11_AI_History_Agents.pdf" target="_blank">AI_History_Agents.pdf</a><br>
-                            <a href="https://github.com/cs21206-iitkgp/cs21206-iitkgp.github.io/raw/refs/heads/main/sp2026/Slides/sec1/stateSpace_search.pdf" target="_blank">State_Space_Search.pdf</a></td>
-                        </tr>
-                        
-                        <tr>
-                            <td col="3">16,17,18 Oct, 2024</td>
-                            <td col="6">Hashing</td>
-                            <td col="3"><a href="https://github.com/cs21203-iitkgp/cs21203-iitkgp.github.io/raw/main/au2024/Slides/08_Hashing.pptx" target="_blank">08_Hashing.pptx</a></td>
-                        </tr>
-                        <tr>
-                            <td col="3"><br></td>
-                            <td col="6">Graphs-I <br>Graphs-II </td>
-                            <td col="3"><a href="https://github.com/cs21203-iitkgp/cs21203-iitkgp.github.io/raw/main/au2024/Slides/09_Graphs_I.pptx" target="_blank">09_Graphs_I.pptx</a> <br><a href="https://github.com/cs21203-iitkgp/cs21203-iitkgp.github.io/raw/main/au2024/Slides/09_Graphs_II.pptx" target="_blank">09_Graphs_II.pptx</a> </td>
-                        </tr>
-                            -->
-                        </tbody>
-                       
-                    </table>
-                </font>
-            </div>
-            
-        </div>
-        <div class="col-lg-3 col-sm-12 col-md-4 team" >
-            <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
-                <div class="card-body ">
-                    <div class="text-center">
-                        <b class="card-title" ><font size="5">Instructors</font></b><hr>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 ">
-                            <img src="https://cse.iitkgp.ac.in/~adas/images/Fac_Profile_Pic.jpg" class="rounded-circle" width="70px" alt="IIT KGP">
-                        </div>
-                        <div class="col-8 instructor" >
-                            <font size="4"><a href="https://cse.iitkgp.ac.in/~adas/">Abir Das</a> </font>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="http://cse.iitkgp.ac.in/~ayanc/ayan_photo.jpeg" class="rounded-circle"  width="80px" alt="IIT KGP">
-                        </div>
-                        <div class="col-8 instructor" >
-                            <font size="4"><a href="http://cse.iitkgp.ac.in/~ayanc/">Ayan Chaudhury</a></font>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow-lg p-3 mb-5 bg-white rounded" >
-                <div class="card-body">
-                    <button class="text-center w-full flex justify-center items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-normal rounded-md text-gray-700 bg-white hover:bg-gray-50" style="width: 100%;" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"><b>Teaching Assistants</b></button>
-                    <div class="row">
-                        
-                        <div class="col">
-                          <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <div class="card card-body">
-                                <h5>Owais Iqbal </h5><p style="font-size: 12;">owais.iqbal@kgpian.iitkgp.ac.in</p>
-                            </div>
-                          </div>
-                        </div>
-                        
-                    <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Rahul Barman </h5><p style="font-size: 12;">barmanrahul@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <!--
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Animesh Singh </h5><p style="font-size: 12;">sanimesh005@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Dipan Mandal </h5><p style="font-size: 12;">mandaldipan@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Soham Banerjee</h5><p style="font-size: 12;">bsoham58@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Vivek Das </h5><p style="font-size: 12;">vivek.das@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Sumit Dwivedi </h5><p style="font-size: 12;">sumitdwivedi49@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Rahul Ram </h5><p style="font-size: 12;">rahulram00925@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Kulkarni Pranav Suryakant </h5><p style="font-size: 12;">pranavkulkarni610@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Roopak Priyadarshi</h5><p style="font-size: 12;">priydarshiroopak@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                              <div class="card card-body">
-                                <h5>Grace Sharma</h5><p style="font-size: 12;">grace@kgpian.iitkgp.ac.in</p>
-                              </div>
-                            </div>
-                        </div>
-                        -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--
-    <div class="reference row" >
-        <div class="card card overview shadow-lg p-3 bg-white rounded"  style="width: 100% !important; background:#f6f6f6 !important;color: #565151; border-top: 20px solid #09458c">
-            <div class="card-body" style="padding-left: 5%;">
-              <h5 class="card-title"><font size="5"><b>References</b></font></h5>
-                <li>Thomas H Cormen, Charles E Lieserson, Ronald L Rivest and Clifford Stein, Introduction to Algorithms.</li>
-                <li>Jon Kleinberg and Éva Tardos, Algorithm Design, Pearson, 2005.</li>
-                <li>Sanjoy Dasgupta, Christos H. Papadimitriou and Umesh V. Vazirani, Algorithms, Tata McGraw-Hill, 2008.</li>
-                <li>Jeff Erickson, Algorithms, 2019.</li>
-                <li>Mark Allen Weiss, Data Structures and Algorithm Analysis in C.</li>
-            </div>
-          </div>
-    </div>
-    -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
